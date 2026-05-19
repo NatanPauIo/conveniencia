@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO ON-PAGE -->
+  <title>Conveniência Praieira | Bebidas, Alimentos e Gelo em São Miguel do Gostoso - RN</title>
+  <meta name="description" content="Conveniência Praieira em São Miguel do Gostoso - RN. Bebidas geladas, alimentos, gelo e muito mais. Atendimento excelente, preços justos. Av. dos Arrecifes, 1989. (84) 99485-9933." />
+  <meta name="keywords" content="conveniência são miguel do gostoso, bebidas geladas, gelo, petiscos, loja conveniência RN, conveniência praieira, supermercado são miguel" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Conveniência Praieira" />
+  <link rel="canonical" href="https://seudominio.com.br/" />
+
+  <!-- OPEN GRAPH (WhatsApp, Facebook, Instagram) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Conveniência Praieira | São Miguel do Gostoso - RN" />
+  <meta property="og:description" content="Bebidas geladas, alimentos, gelo e petiscos. Atendimento excelente, preços justos. Venha nos visitar!" />
+  <meta property="og:url" content="https://seudominio.com.br/" />
+  <meta property="og:image" content="https://seudominio.com.br/og-image.jpg" /><!-- SUBSTITUA pela URL da sua imagem OG (1200x630px) -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Conveniência Praieira" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Conveniência Praieira | São Miguel do Gostoso" />
+  <meta name="twitter:description" content="Bebidas geladas, alimentos e gelo no coração de São Miguel do Gostoso." />
+  <meta name="twitter:image" content="https://seudominio.com.br/og-image.jpg" />
+
+  <!-- =====================================================
+       PIXEL DA META (FACEBOOK ADS) — Cole aqui
+       =====================================================
+  <script>
+    !function(f,b,e,v,n,t,s){...}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
+  </noscript>
+  ===================================================== -->
+
+  <!-- =====================================================
+       GOOGLE ANALYTICS 4 / GOOGLE ADS TAG — Cole aqui
+       =====================================================
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  ===================================================== -->
+
+  <!-- Leaflet.js (Mapa Interativo) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WPeE=" crossorigin=""></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Syne:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Conveniência Praieira - Página Inicial">
+        <span class="logo__icon">🌊</span>
+        <div class="logo__text">
+          <span class="logo__name">Praieira</span>
+          <span class="logo__sub">conveniência</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#produtos" class="nav__link">Produtos</a></li>
+          <li><a href="#galeria" class="nav__link">Galeria</a></li>
+          <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+          <li><a href="#localizacao" class="nav__link">Localização</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/5584994859933?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+         class="btn btn--whatsapp header__cta"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Falar no WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-mobile" id="navMobile" aria-hidden="true">
+    <ul>
+      <li><a href="#produtos" class="nav__link">Produtos</a></li>
+      <li><a href="#galeria" class="nav__link">Galeria</a></li>
+      <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+      <li><a href="#localizacao" class="nav__link">Localização</a></li>
+    </ul>
+    <a href="https://wa.me/5584994859933?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+       class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+      Falar no WhatsApp
+    </a>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Destaque principal">
+      <div class="hero__bg-text" aria-hidden="true">PRAIEIRA</div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">⭐ 5.0 · São Miguel do Gostoso - RN</div>
+          <h1 class="hero__title">
+            Gelado, fresco e<br />
+            <em>perto de você.</em>
+          </h1>
+          <p class="hero__sub">
+            Bebidas geladas, petiscos, gelo e tudo que você precisa para curtir o melhor de São Miguel do Gostoso — com atendimento que faz você querer voltar sempre.
+          </p>
+          <div class="hero__actions">
+            <a href="https://wa.me/5584994859933?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido."
+               class="btn btn--primary btn--lg"
+               target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Fazer Pedido Agora
+            </a>
+            <a href="#localizacao" class="btn btn--outline btn--lg">
+              📍 Como Chegar
+            </a>
+          </div>
+          <div class="hero__trust">
+            <div class="hero__stars" aria-label="Avaliação 5 estrelas">★★★★★</div>
+            <span>"Atendimento excelente e preços justos"</span>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <!-- SUBSTITUA o src pelo caminho da imagem da fachada: src="conveniencia.jpeg" -->
+          <div class="hero__img-wrap">
+            <img src="conveniencia.jpeg"
+                 alt="Fachada da Conveniência Praieira em São Miguel do Gostoso"
+                 class="hero__img"
+                 width="560" height="480"
+                 loading="eager" />
+            <div class="hero__img-badge">
+              <span class="pulse"></span>
+              Aberto Agora
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg)"/></svg>
+      </div>
+    </section>
+
+    <!-- ===== CATEGORIAS / PRODUTOS ===== -->
+    <section class="section produtos" id="produtos" aria-labelledby="produtos-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">O que você encontra aqui</p>
+          <h2 class="section__title" id="produtos-title">Tudo para a sua praia perfeita</h2>
+        </div>
+        <ul class="produtos__grid" role="list">
+          <li class="produto-card" role="listitem">
+            <div class="produto-card__icon" aria-hidden="true">🍺</div>
+            <h3 class="produto-card__title">Bebidas Geladas</h3>
+            <p class="produto-card__desc">Cervejas, refrigerantes, sucos, energéticos e água bem gelados para o seu dia de praia.</p>
+          </li>
+          <li class="produto-card produto-card--highlight" role="listitem">
+            <div class="produto-card__icon" aria-hidden="true">🧊</div>
+            <h3 class="produto-card__title">Gelo</h3>
+            <p class="produto-card__desc">Gelo em cubo e em barra para manter tudo fresco. Aqui tem Paletê Gelo!</p>
+          </li>
+          <li class="produto-card" role="listitem">
+            <div class="produto-card__icon" aria-hidden="true">🥨</div>
+            <h3 class="produto-card__title">Petiscos & Salgados</h3>
+            <p class="produto-card__desc">Chips, amendoim, biscoitos e salgadinhos para acompanhar a galera.</p>
+          </li>
+          <li class="produto-card" role="listitem">
+            <div class="produto-card__icon" aria-hidden="true">🛒</div>
+            <h3 class="produto-card__title">Alimentos Básicos</h3>
+            <p class="produto-card__desc">Produtos de cesta básica, temperos, enlatados e tudo para o dia a dia.</p>
+          </li>
+          <li class="produto-card" role="listitem">
+            <div class="produto-card__icon" aria-hidden="true">🍫</div>
+            <h3 class="produto-card__title">Doces & Chocolates</h3>
+            <p class="produto-card__desc">Balas, chocolates e sorvetes para adoçar o seu momento.</p>
+          </li>
+          <li class="produto-card" role="listitem">
+            <div class="produto-card__icon" aria-hidden="true">🚬</div>
+            <h3 class="produto-card__title">Cigarro & Outros</h3>
+            <p class="produto-card__desc">Produtos para adultos, isqueiros, velas e itens do cotidiano.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== GALERIA ===== -->
+    <section class="section galeria" id="galeria" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Conheça nossa loja</p>
+          <h2 class="section__title" id="galeria-title">Venha nos visitar</h2>
+        </div>
+      </div>
+      <div class="galeria__track-wrap">
+        <div class="galeria__track" id="galeriaTrack" role="region" aria-label="Galeria de fotos da loja">
+          <!--
+            INSTRUÇÕES: Substitua os src pelas suas imagens reais.
+            Você pode adicionar quantos <div class="galeria__slide"> quiser.
+            Imagens sugeridas: fachada, interior, geladeira de bebidas, prateleiras, etc.
+          -->
+          <div class="galeria__slide">
+            <!-- src="conveniencia.jpeg" → fachada -->
+            <img src="conveniencia.jpeg"
+                 alt="Fachada da Conveniência Praieira com produtos em destaque"
+                 width="600" height="450" loading="lazy" />
+            <div class="galeria__caption">Nossa fachada — Av. dos Arrecifes, 1989</div>
+          </div>
+          <div class="galeria__slide">
+            <!-- src="conveniencia1.webp" → interior da loja -->
+            <img src="conveniencia1.webp"
+                 alt="Interior da Conveniência Praieira com geladeiras de bebidas e prateleiras abastecidas"
+                 width="600" height="450" loading="lazy" />
+            <div class="galeria__caption">Variedade que você precisa, gelada do jeito certo</div>
+          </div>
+          <!-- ADICIONE MAIS SLIDES AQUI:
+          <div class="galeria__slide">
+            <img src="foto3.jpg" alt="Descrição da foto 3" width="600" height="450" loading="lazy" />
+            <div class="galeria__caption">Legenda da foto 3</div>
+          </div>
+          -->
+        </div>
+        <button class="galeria__btn galeria__btn--prev" id="galeriaBtn" aria-label="Foto anterior">‹</button>
+        <button class="galeria__btn galeria__btn--next" id="galeriaBtnNext" aria-label="Próxima foto">›</button>
+        <div class="galeria__dots" id="galeriaDots" aria-label="Indicadores de slide" role="tablist"></div>
+      </div>
+    </section>
+
+    <!-- ===== DIFERENCIAIS ===== -->
+    <section class="section diferenciais" id="diferenciais" aria-labelledby="diferenciais-title">
+      <div class="container">
+        <div class="section__header section__header--light">
+          <p class="section__eyebrow section__eyebrow--light">Por que a Praieira?</p>
+          <h2 class="section__title section__title--light" id="diferenciais-title">A conveniência que você merece</h2>
+        </div>
+        <ul class="diferenciais__grid" role="list">
+          <li class="diferencial-card" role="listitem">
+            <div class="diferencial-card__num" aria-hidden="true">01</div>
+            <div class="diferencial-card__icon" aria-hidden="true">⭐</div>
+            <h3 class="diferencial-card__title">Nota 5.0 no Google</h3>
+            <p>Avaliação máxima pelos clientes. Atendimento que encanta quem nos visita.</p>
+          </li>
+          <li class="diferencial-card" role="listitem">
+            <div class="diferencial-card__num" aria-hidden="true">02</div>
+            <div class="diferencial-card__icon" aria-hidden="true">💰</div>
+            <h3 class="diferencial-card__title">Preços Justos</h3>
+            <p>Sem surpresas na hora de pagar. Preços honestos para quem é da terra e para os visitantes.</p>
+          </li>
+          <li class="diferencial-card" role="listitem">
+            <div class="diferencial-card__num" aria-hidden="true">03</div>
+            <div class="diferencial-card__icon" aria-hidden="true">🧊</div>
+            <h3 class="diferencial-card__title">Sempre Gelado</h3>
+            <p>Geladeiras sempre cheias e na temperatura certa para o calor do Nordeste.</p>
+          </li>
+          <li class="diferencial-card" role="listitem">
+            <div class="diferencial-card__num" aria-hidden="true">04</div>
+            <div class="diferencial-card__icon" aria-hidden="true">📍</div>
+            <h3 class="diferencial-card__title">Localização Central</h3>
+            <p>Na Av. dos Arrecifes, 1989, no coração de São Miguel do Gostoso.</p>
+          </li>
+          <li class="diferencial-card" role="listitem">
+            <div class="diferencial-card__num" aria-hidden="true">05</div>
+            <div class="diferencial-card__icon" aria-hidden="true">😊</div>
+            <h3 class="diferencial-card__title">Atendimento Humano</h3>
+            <p>"Um ótimo lugar para comprar, atendimento excelente ❤️" — clientes reais.</p>
+          </li>
+          <li class="diferencial-card" role="listitem">
+            <div class="diferencial-card__num" aria-hidden="true">06</div>
+            <div class="diferencial-card__icon" aria-hidden="true">🛒</div>
+            <h3 class="diferencial-card__title">Variedade Completa</h3>
+            <p>De bebidas geladas a itens de necessidade — tudo em um único lugar.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== LOCALIZAÇÃO ===== -->
+    <section class="section localizacao" id="localizacao" aria-labelledby="localizacao-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Onde estamos</p>
+          <h2 class="section__title" id="localizacao-title">Fácil de encontrar, difícil de esquecer</h2>
+        </div>
+        <div class="localizacao__inner">
+          <div class="localizacao__info">
+            <div class="info-block">
+              <h3 class="info-block__title">📍 Endereço</h3>
+              <address class="info-block__text">
+                Av. dos Arrecifes, 1989<br />
+                Centro, São Miguel do Gostoso<br />
+                RN, 59585-000
+              </address>
+            </div>
+            <div class="info-block">
+              <h3 class="info-block__title">📞 Telefone / WhatsApp</h3>
+              <p class="info-block__text">
+                <a href="tel:+5584994859933" class="info-link">(84) 99485-9933</a>
+              </p>
+            </div>
+            <div class="info-block">
+              <h3 class="info-block__title">🕐 Horário de Funcionamento</h3>
+              <table class="horarios" aria-label="Horários de funcionamento">
+                <tbody>
+                  <tr><td>Segunda</td><td>07:00 – 21:00</td></tr>
+                  <tr><td>Terça</td><td>07:00 – 21:00</td></tr>
+                  <tr><td>Quarta</td><td>07:00 – 21:00</td></tr>
+                  <tr class="hoje"><td>Quinta</td><td>07:00 – 21:00</td></tr>
+                  <tr><td>Sexta</td><td>07:00 – 21:00</td></tr>
+                  <tr><td>Sábado</td><td>07:00 – 21:00</td></tr>
+                  <tr><td>Domingo</td><td>07:00 – 21:00</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <a href="https://wa.me/5584994859933?text=Olá!%20Quero%20saber%20mais%20sobre%20produtos%20e%20horários."
+               class="btn btn--primary btn--full"
+               target="_blank" rel="noopener noreferrer">
+              Falar no WhatsApp agora
+            </a>
+          </div>
+          <div class="localizacao__mapa" id="mapa" aria-label="Mapa interativo mostrando a localização da Conveniência Praieira"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="cta-final" aria-label="Chamada final para ação">
+      <div class="container cta-final__inner">
+        <div class="cta-final__wave-deco" aria-hidden="true">🌊🌊🌊</div>
+        <h2 class="cta-final__title">Bora gelaaado?</h2>
+        <p class="cta-final__sub">Entre em contato agora pelo WhatsApp e garanta o que você precisa para o seu dia perfeito em São Miguel do Gostoso.</p>
+        <a href="https://wa.me/5584994859933?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido."
+           class="btn btn--primary btn--xl btn--glow"
+           target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer" aria-label="Conveniência Praieira">
+          <span class="logo__icon">🌊</span>
+          <div class="logo__text">
+            <span class="logo__name">Praieira</span>
+            <span class="logo__sub">conveniência</span>
+          </div>
+        </a>
+        <p class="footer__slogan">Tudo que você precisa perto do mar.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contato</h4>
+        <ul class="footer__links">
+          <li><a href="tel:+5584994859933">(84) 99485-9933</a></li>
+          <li><a href="https://wa.me/5584994859933" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li>
+            <address>Av. dos Arrecifes, 1989<br />Centro, São Miguel do Gostoso – RN</address>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Redes Sociais</h4>
+        <ul class="footer__social">
+          <!-- SUBSTITUA os href pelos links reais das suas redes sociais -->
+          <li>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Conveniência Praieira">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Conveniência Praieira">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>CNPJ: 34.204.443/0001-16 · Conveniência Praieira</p>
+        <p>© <span id="year"></span> Conveniência Praieira. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/5584994859933?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+     class="whatsapp-float"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Falar pelo WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="whatsapp-float__tooltip">Fale conosco!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
