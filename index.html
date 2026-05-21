@@ -116,13 +116,7 @@
       rel="stylesheet"
     />
 
-    <!-- LEAFLET.JS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
+  
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -855,151 +849,59 @@
       <!-- ============================= -->
       <!-- LOCALIZAÇÃO                   -->
       <!-- ============================= -->
-      <section
-        class="section section--light"
-        id="localizacao"
-        aria-label="Localização e horários"
-      >
-        <div class="container">
-          <div class="section__header">
-            <span class="section__label">Venha nos visitar</span>
-            <h2 class="section__title">
-              Onde nos encontrar em São Miguel do Gostoso
-            </h2>
-          </div>
-
-          <div class="location-grid">
-            <!-- Info -->
-            <div class="location-info">
-              <address
-                class="location-address"
-                aria-label="Endereço da Conveniência Praeira"
-              >
-                <div class="location-address__item">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
-                    />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  <span
-                    >Av. dos Arrecifes, 1989 - Centro<br />São Miguel do Gostoso
-                    - RN, 59585-000</span
-                  >
-                </div>
-                <div class="location-address__item">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.07 6.07l1.34-1.34a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                    />
-                  </svg>
-                  <a
-                    href="tel:+5584994859933"
-                    aria-label="Ligar para a Conveniência Praeira"
-                    >(84) 99485-9933</a
-                  >
-                  &nbsp;·&nbsp;
-                  <a
-                    href="https://wa.me/5584994859933"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="WhatsApp da Conveniência Praeira"
-                    >WhatsApp</a
-                  >
-                </div>
-              </address>
-
-              <div class="location-hours">
-                <h3 class="location-hours__title">Horários de Funcionamento</h3>
-                <table
-                  class="hours-table"
-                  aria-label="Tabela de horários de funcionamento"
-                >
-                  <tbody>
-                    <tr>
-                      <td>Segunda-feira</td>
-                      <td class="hours-table__time">07:00 – 21:00</td>
-                    </tr>
-                    <tr>
-                      <td>Terça-feira</td>
-                      <td class="hours-table__time">07:00 – 21:00</td>
-                    </tr>
-                    <tr>
-                      <td>Quarta-feira</td>
-                      <td class="hours-table__time">07:00 – 21:00</td>
-                    </tr>
-                    <tr class="hours-table__row--highlight">
-                      <td>Quinta-feira</td>
-                      <td class="hours-table__time">07:00 – 21:00</td>
-                    </tr>
-                    <tr>
-                      <td>Sexta-feira</td>
-                      <td class="hours-table__time">07:00 – 21:00</td>
-                    </tr>
-                    <tr>
-                      <td>Sábado</td>
-                      <td class="hours-table__time">07:00 – 21:00</td>
-                    </tr>
-                    <tr>
-                      <td>Domingo</td>
-                      <td class="hours-table__time">07:00 – 21:00</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Conveni%C3%AAncia+Praeira+S%C3%A3o+Miguel+do+Gostoso"
-                class="btn btn--primary btn--lg"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Abrir localização no Google Maps"
-              >
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
-                  />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-                Abrir no Google Maps
-              </a>
-            </div>
-
-            <!-- Map -->
-            <div class="location-map">
-              <div
-                id="map"
-                role="application"
-                aria-label="Mapa interativo com localização da Conveniência Praeira"
-              ></div>
-            </div>
-          </div>
-        </div>
       </section>
+
+    <section class="section section--light" id="localizacao" aria-label="Localização e horários">
+      <div class="container container--narrow"> 
+        <div class="section__header">
+          <span class="section__label">Venha nos visitar</span>
+          <h2 class="section__title">Onde nos encontrar em São Miguel do Gostoso</h2>
+        </div>
+
+        <div class="location-info" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+
+          <address class="location-address" aria-label="Endereço da Conveniência Praeira" style="align-items: center;">
+            <div class="location-address__item" style="justify-content: center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Av. dos Arrecifes, 1989 - Centro<br>São Miguel do Gostoso - RN, 59585-000</span>
+            </div>
+            <div class="location-address__item" style="justify-content: center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.07 6.07l1.34-1.34a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+5584994859933" aria-label="Ligar para a Conveniência Praeira">(84) 99485-9933</a>
+               · 
+              <a href="https://wa.me/5584994859933" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Conveniência Praeira">WhatsApp</a>
+            </div>
+          </address>
+
+          <div class="location-hours" style="width: 100%; max-width: 400px;">
+            <h3 class="location-hours__title">Horários de Funcionamento</h3>
+            <table class="hours-table" aria-label="Tabela de horários de funcionamento">
+              <tbody>
+                <tr><td>Segunda-feira</td><td class="hours-table__time">07:00 – 21:00</td></tr>
+                <tr><td>Terça-feira</td><td class="hours-table__time">07:00 – 21:00</td></tr>
+                <tr><td>Quarta-feira</td><td class="hours-table__time">07:00 – 21:00</td></tr>
+                <tr class="hours-table__row--highlight"><td>Quinta-feira</td><td class="hours-table__time">07:00 – 21:00</td></tr>
+                <tr><td>Sexta-feira</td><td class="hours-table__time">07:00 – 21:00</td></tr>
+                <tr><td>Sábado</td><td class="hours-table__time">07:00 – 21:00</td></tr>
+                <tr><td>Domingo</td><td class="hours-table__time">07:00 – 21:00</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <a href="https://www.google.com/maps/dir/?api=1&destination=-5.1186,-35.6352"
+             class="btn btn--primary btn--lg"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Abrir rota no Google Maps">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ver rota no Google Maps
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="faq" aria-label="Perguntas frequentes">
 
       <!-- ============================= -->
       <!-- FAQ                           -->
@@ -1259,12 +1161,7 @@
       </div>
     </footer>
 
-    <!-- LEAFLET JS -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WPcU="
-      crossorigin=""
-    ></script>
+    
 
     <!-- MAIN JS -->
     <script src="script.js"></script>
